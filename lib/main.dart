@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:postcodes/screens/search_screen.dart';
+import 'package:postcodes/styles/app_styles.dart';
+
+void main() {
+  runApp(const PostcodesApp());
+}
+
+class PostcodesApp extends StatelessWidget {
+  const PostcodesApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: AppStyles.theme,
+      home: SearchScreen(),
+    );
+  }
+}
